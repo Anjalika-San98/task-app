@@ -58,19 +58,19 @@
         .bg-white {
             --bg-opacity: 1;
             background-color: #fff;
-            background-color: rgba(255, 255, 255, var(--bg-opacity))
+
         }
 
         .bg-gray-100 {
             --bg-opacity: 1;
             background-color: #f7fafc;
-            background-color: rgba(247, 250, 252, var(--bg-opacity))
+
         }
 
         .border-gray-200 {
             --border-opacity: 1;
             border-color: #edf2f7;
-            border-color: rgba(237, 242, 247, var(--border-opacity))
+
         }
 
         .border-t {
@@ -364,8 +364,7 @@
 
             .dark\:bg-gray-900 {
                 --bg-opacity: 1;
-                background-color: #1a202c;
-                background-color: rgba(26, 32, 44, var(--bg-opacity))
+                background-color: #ffffff;
             }
 
             .dark\:border-gray-700 {
@@ -409,7 +408,7 @@
     @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
             @auth
-                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                <a href="{{ url('/tasks') }}" class="text-sm text-gray-700 underline">Tasks</a>
             @else
                 <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
 
